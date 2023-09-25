@@ -1,15 +1,19 @@
 ### Quick Summary
 
-<table>
-    <thead>
-    <tr>
-        <th>Version</th>
-        <th>Features</th>
-        <th>Example</th>
-    </tr>
-    </thead>
+<table width="100%">
     <tbody>
-    <tr style="background-color:#ddd;">
+    <tr>
+        <th width="20%">Version</th>
+        <th width="40%">Features</th>
+        <th width="40%">Example</th>
+    </tr>
+    </tbody>
+</table>
+
+<!--Java 8-->
+<table  style="background-color:#ddd;">
+   <tbody>
+    <tr>
         <td rowspan=4>Java 8</td>
         <td>Lambdas</td>
         <td>
@@ -20,7 +24,7 @@ Runnable runnable = () -> System.out.println("Hello world two!");
 
 </td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td>Arrays.asList</td>
         <td>
 
@@ -30,7 +34,7 @@ List <String> list = Arrays.asList("franz", "ferdinand", "fiel", "vom", "pferd")
 
 </td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td>Streams API</td>
         <td> 
 
@@ -44,13 +48,19 @@ list.stream()
 
 </td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td>Default and Static methods in interface</td>
         <td>Default methods in interfaces allow the developers to add new methods to the interfaces without affecting
             the classes that implement these interfaces. <br> Static methods in interfaces are similar to the default
             methods except that we cannot override these methods in the classes that implement these interfaces.
         </td>
     </tr>
+   </tbody>
+</table>
+
+<!--Java 9-->
+<table>
+<tbody>
     <tr>
         <td rowspan=7>Java 9</td>
         <td>List.of, Set.of, Map.of</td>
@@ -114,11 +124,23 @@ x ==> 10
         <td><b>project jigsaw</b></td>
         <td>single jar containing diff classes for diff JVM versions</td>
     </tr>
+</tbody>
+</table>
+
+<!--Java 10-->
+<table>
+<tbody>
     <tr style="background-color:#ddd;">
         <td>Java 10</td>
         <td><b>var</b> keyword</td>
         <td> local-variable type inference, only applies to variables within methods</td>
     </tr>
+</tbody>
+</table>
+
+<!--Java 11-->
+<table>
+<tbody>
     <tr>
         <td rowspan=3>Java 11 <b>(LTS)</b></td>
         <td>Strings.isBlank()</td>
@@ -132,15 +154,26 @@ x ==> 10
         <td>var in lambda parameters</td>
         <td>(var firstName, var lastName) -> firstName + lastName</td>
     </tr>
-    <tr style="background-color:#ddd;">
-        <td rowspan=2>Java 12</td>
-        <td>unicode support</td>
-        <td></td>
+</tbody>
+</table>
+
+<!-- Java 12 -->
+<table width="100%" style="background-color:#ddd;">
+<tbody>
+    <tr>
+        <td rowspan=2 width="20%">Java 12</td>
+        <td width="40%">unicode support</td>
+        <td width="40%"></td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td>preview of new switch</td>
         <td></td>
     </tr>
+</tbody>
+</table>
+
+<!--Java 13-->
+<table><tbody>
     <tr>
         <td rowspan=2>Java 13</td>
         <td><b>multiline strings</b> without + (preview)</td>
@@ -172,7 +205,11 @@ boolean result = switch (status) {
 
 </td>
     </tr>
-    <tr style="background-color:#ddd;">
+</tbody></table>
+
+<!--Java 14-->
+<table style="background-color:#ddd;"><tbody>
+    <tr>
         <td rowspan=4>Java 14</td>
         <td><b>Switch Expressions</b> (standard)</td>
         <td>
@@ -191,15 +228,15 @@ int numLetters = switch (day) {
 
 </td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td><b>Records</b> (preview)</td>
         <td>record Point(int x, int y) { }</td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td>experimental Z Garbage Collector collector added.</td>
         <td></td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td>Pattern Matching Type Checks (preview)</td>
         <td>
 
@@ -211,6 +248,10 @@ if (person instanceof Employee employee && employee.getYearsOfService() > 5) {
 
 </td>
     </tr>
+</tbody></table>
+
+<!--Java 15-->
+<table><tbody>
     <tr>
         <td rowspan=2>Java 15</td>
         <td><b>Sealed and Permits</b> (preview)</td>
@@ -246,7 +287,12 @@ String text = """
 
 </td>
     </tr>
-    <tr style="background-color:#ddd;">
+
+</tbody></table>
+
+<!-- Java 16 -->
+<table style="background-color:#ddd;"><tbody>
+    <tr >
         <td rowspan=2>Java 16</td>
         <td>Pattern Matching for instanceof</td>
         <td>
@@ -260,10 +306,15 @@ if (obj instanceof String s) {
 
 </td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td>Records & Pattern Matching (standard)</td>
         <td></td>
     </tr>
+
+</tbody></table>
+
+<!-- Java 17 -->
+<table><tbody>
     <tr>
         <td rowspan=2>Java 17 <b>(LTS)</b></td>
         <td><b>Pattern Matching for switch</b> (preview)</td>
@@ -293,8 +344,11 @@ public String test(Object obj) {
         <td>Sealed Classes (Standard)</td>
         <td></td>
     </tr>
-    </tbody>
-    <tr style="background-color:#ddd;">
+</tbody></table>
+
+<!-- Java 18 -->
+<table style="background-color:#ddd;"><tbody>
+    <tr>
         <td rowspan=2>Java 18</td>
         <td><b>Pattern matching for switch</b> (2nd preview)</td>
         <td>
@@ -312,11 +366,15 @@ switch (obj) {
 
 </td>
     </tr>
-    <tr style="background-color:#ddd;">
+    <tr>
         <td>UTF-8 by Default</td>
         <td></td>
     </tr>
-    <tr>
+</tbody></table>
+
+<!-- Java 19 -->
+<table><tbody>
+<tr>
         <td rowspan=3>Java 19</td>
         <td><b>Virtual Threads</b> (Preview)</td>
         <td>Project Loom</td>
@@ -336,7 +394,27 @@ switch (obj) {
 </ul>
     </td>
     </tr>
+</tbody>
 </table>
+
+<!--Java 20-->
+<table style="background-color:#ddd;"><tbody>
+    <tr>
+        <td>Java 20</td>
+        <td><b>Scoped Values </b></td>
+        <td>A ScopedValue is an immutable value that is available for reading for a bounded period of execution by a thread. Since it’s immutable, it allows safe and easy data-sharing for a limited period of thread execution. Also, we need not pass the values as method arguments.</td>
+    </tr>
+    
+</tbody></table>
+
+<!--Java 21-->
+<table><tbody>
+    <tr>
+        <td>Java 21<b>(LTS)</b></td>
+        <td>LTS release, some features are still in preview though </td>
+   </tr>
+</tbody></table>
+
 
 ### Java Distributions
 
